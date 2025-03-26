@@ -1,16 +1,5 @@
 #include "Fire.h"
-<<<<<<< HEAD
-using namespace std;
 
-void updateFire(Grid<int>& fire) {
-    /* TODO: The next line just exists to make sure you don't get compiler warning messages
-     * when this function isn't implemented. Delete this comment and the next line, then
-     * implement this function.
-     */
-    (void) fire;
-}
-
-=======
 #include "random.h"
 
 using namespace std;
@@ -44,7 +33,7 @@ void updateFire(Grid<int>& fire) {
 }
 
 
->>>>>>> 2fab9e1 (adding the fire.cpp)
+
 
 /* * * * * * Provided Test Cases * * * * * */
 #include "GUI/SimpleTest.h"
