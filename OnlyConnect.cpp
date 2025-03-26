@@ -5,12 +5,11 @@
  * TODO: Edit these comments to leave a puzzle for your section leader to solve!
  */
 #include "OnlyConnect.h"
-<<<<<<< HEAD
-=======
+
 #include <cctype>
 #include <vector>
 #include "strlib.h"
->>>>>>> 205f3a0 (pushing)
+
 using namespace std;
 
 string onlyConnectize(string phrase) {
@@ -18,13 +17,6 @@ string onlyConnectize(string phrase) {
      * warning messages when this function isn't implemented. Delete this
      * comment and the next few lines, then implement this function.
      */
-<<<<<<< HEAD
-    (void) phrase;
-    return "";
-}
-
-=======
-
     if (phrase.empty()) {
         return "";
     }
@@ -36,8 +28,9 @@ string onlyConnectize(string phrase) {
     }else {
         return rest;
     }
+
 }
->>>>>>> 205f3a0 (pushing)
+
 
 
 
@@ -55,9 +48,7 @@ PROVIDED_TEST("Converts lower-case to upper-case.") {
     EXPECT_EQUAL(onlyConnectize("lowercase"), "LWRCS");
     EXPECT_EQUAL(onlyConnectize("uppercase"), "PPRCS");
 }
-<<<<<<< HEAD
 
-=======
 PROVIDED_TEST("Uses different signs") {
     EXPECT_EQUAL(onlyConnectize("@#(&"), "");
     EXPECT_EQUAL(onlyConnectize("@#$@$asjd"), "SJD");
@@ -66,7 +57,7 @@ PROVIDED_TEST("is an empty string") {
     EXPECT_EQUAL(onlyConnectize(""), "");
 
 }
->>>>>>> 205f3a0 (pushing)
+
 /* TODO: You will need to add your own tests into this suite of test cases. Think about the sorts
  * of inputs we tested here, and, importantly, what sorts of inputs we *didn't* test here. Some
  * general rules of testing:
