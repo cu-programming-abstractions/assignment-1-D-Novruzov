@@ -1,13 +1,38 @@
 #include "Fire.h"
+
+#include "random.h"
+
 using namespace std;
 
 void updateFire(Grid<int>& fire) {
-    /* TODO: The next line just exists to make sure you don't get compiler warning messages
-     * when this function isn't implemented. Delete this comment and the next line, then
-     * implement this function.
-     */
-    (void) fire;
+    for (int i = 1; i < fire.numRows(); i++) {
+        for (int j = 0; j < fire.numCols(); j++) {
+            if (fire.inBounds(i, j)) {
+
+            Vector<int> shifts = {-1, 0, 1};
+            int newJ = randomElement(shifts) + j;
+            if(newJ >= 0 && newJ < fire.numCols()){
+                if(fire[i][j] == 0){
+                    fire[i-1][newJ] = 0;
+                }
+                else {
+                    fire[i - 1][newJ] = fire[i][j];
+                    if(fire[i - 1][newJ] > 0 && randomChance(2.0/3.0)){
+                        fire[i - 1][newJ] -= 1;
+                    }
+                }
+            } else {
+                fire[i-1][j] = fire[i][j];
+            }
+
+
 }
+
+        }
+    }
+}
+
+
 
 
 /* * * * * * Provided Test Cases * * * * * */

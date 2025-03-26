@@ -2,17 +2,32 @@
  * someone reading them for the first time. In this case, though, it's a space
  * for you to write down answers to the three questions asked in this section.
  *
+<<<<<<< HEAD
  * Q1:
+=======
+ * Q1: Once upon a time, mathematician Srinivasa Ramanujan was running a high-altitude marathon when, suddenly David
+ *saved the original copy of 'Kubla Khan from a volcanic eruption
+ *for the second time in a week. THE END!
+ *
+ *
+ * Q2:When I clicked the 'Go' button in the program window, it crashed the
+ * application and a message appeared saying: 'Welcome to CPP file quit
+ * unexpectedly' and it quit the window.
+>>>>>>> 5de85f5 (adding the debugger.cpp)
  *
  *
  *
  *
+<<<<<<< HEAD
  * Q2:
  *
  *
  *
  *
  * Q3:
+=======
+ * Q3:593, 589, 152, 1, 84, 72, 844
+>>>>>>> 5de85f5 (adding the debugger.cpp)
  *
  *
  *
@@ -28,7 +43,11 @@ using namespace std;
 /* TODO: Fill this in with your name before reading the story. Otherwise
  * you'll get the wrong story!
  */
-const string MyName = "(Your Name Here)";
+
+
+
+const string MyName = "David";
+
 
 namespace {
     void theEnd() {
