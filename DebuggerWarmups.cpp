@@ -43,11 +43,11 @@ using namespace std;
 /* TODO: Fill this in with your name before reading the story. Otherwise
  * you'll get the wrong story!
  */
-<<<<<<< HEAD
-const string MyName = "(Your Name Here)";
-=======
+
+
+
 const string MyName = "David";
->>>>>>> 5de85f5 (adding the debugger.cpp)
+
 
 namespace {
     void theEnd() {

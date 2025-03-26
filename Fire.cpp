@@ -1,4 +1,5 @@
 #include "Fire.h"
+<<<<<<< HEAD
 using namespace std;
 
 void updateFire(Grid<int>& fire) {
@@ -9,6 +10,41 @@ void updateFire(Grid<int>& fire) {
     (void) fire;
 }
 
+=======
+#include "random.h"
+
+using namespace std;
+
+void updateFire(Grid<int>& fire) {
+    for (int i = 1; i < fire.numRows(); i++) {
+        for (int j = 0; j < fire.numCols(); j++) {
+            if (fire.inBounds(i, j)) {
+
+            Vector<int> shifts = {-1, 0, 1};
+            int newJ = randomElement(shifts) + j;
+            if(newJ >= 0 && newJ < fire.numCols()){
+                if(fire[i][j] == 0){
+                    fire[i-1][newJ] = 0;
+                }
+                else {
+                    fire[i - 1][newJ] = fire[i][j];
+                    if(fire[i - 1][newJ] > 0 && randomChance(2.0/3.0)){
+                        fire[i - 1][newJ] -= 1;
+                    }
+                }
+            } else {
+                fire[i-1][j] = fire[i][j];
+            }
+
+
+}
+
+        }
+    }
+}
+
+
+>>>>>>> 2fab9e1 (adding the fire.cpp)
 
 /* * * * * * Provided Test Cases * * * * * */
 #include "GUI/SimpleTest.h"
